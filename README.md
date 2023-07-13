@@ -36,8 +36,8 @@ Email : mhdmajdi2108@gmail.com
 
 10. Perintah ini akan menghasilkan kunci unik yang diperlukan untuk menjalankan aplikasi Laravel.
 11. Buka localhost pada PHPMyAdmin
-12. Buat database baru dengan nama yhc_courses (case sensitive)
-13. Pada database tersebut, import file di project yang sudah di clone <b>( yhc_courses.sql )</b>
+12. Buat database baru dengan nama yhc_college_students (case sensitive)
+13. Pada database tersebut, import file di project yang sudah di clone <b>( yhc_college_students.sql )</b>
 14. Setelah itu, jalankan perintah migrasi untuk membuat tabel-tabel yang diperlukan di database:
 
 <pre><code class="language-bash">php artisan migrate</code></pre>
