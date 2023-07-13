@@ -1,66 +1,60 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h2>Data Diri</h2>
+Nama : Muhammad Majdi <br>
+Perguruan Tinggi : Universitas Lambung Mangkurat <br>
+Program Studi : Teknologi Informasi<br>
+Alamat : Kec. Karang Intan Kab. Banjar, Kalimantan Selatan <br>
+Nomor Telepon (WA) : 0882 4541 1080 <br>
+Email : mhdmajdi2108@gmail.com
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h2>Proses Installasi Sistem</h2>
+<b>Pastikan Anda telah menginstal PHP, Composer, dan MySQL di komputer Anda. Jika belum, Anda perlu menginstalnya terlebih dahulu.</b> <br>
+<br>
 
-## About Laravel
+1. Buka terminal atau command prompt dan arahkan ke direktori tempat Anda ingin menyimpan proyek Laravel.
+2. Buka repositori proyek Laravel di GitHub yang ingin Anda jalankan oleh orang lain. Salin URL repositori.
+3. Di terminal atau command prompt, jalankan perintah berikut untuk mengklon repositori ke komputer Anda:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<pre><code class="language-bash">git clone https://github.com/Morfz/yhc-laravel-programmer.git</code></pre>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+4. Setelah repositori berhasil diklon, masuk ke direktori proyek Laravel dengan menjalankan perintah berikut:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<pre><code class="language-bash">cd yhc-laravel-programmer</code></pre>
 
-## Learning Laravel
+5. Selanjutnya, jalankan perintah berikut untuk menginstal dependensi proyek Laravel:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<pre><code class="language-bash">composer install</code></pre>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+6. Perintah ini akan mengunduh dan menginstal semua dependensi yang diperlukan oleh proyek Laravel.
+7. Salin file .env.example dan ubah namanya menjadi .env:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<pre><code class="language-bash">cp .env.example .env</code></pre>
 
-## Laravel Sponsors
+8. Kemudian, buka file .env dan konfigurasikan pengaturan database sesuai dengan lingkungan Anda (nama database, pengguna, kata sandi, dll.).
+9. Generate kunci aplikasi Laravel dengan menjalankan perintah berikut:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<pre><code class="language-bash">php artisan key:generate</code></pre>
 
-### Premium Partners
+10. Perintah ini akan menghasilkan kunci unik yang diperlukan untuk menjalankan aplikasi Laravel.
+11. Buka localhost pada PHPMyAdmin
+12. Buat database baru dengan nama yhc_courses (case sensitive)
+13. Pada database tersebut, import file di project yang sudah di clone <b>( yhc_courses.sql )</b>
+14. Setelah itu, jalankan perintah migrasi untuk membuat tabel-tabel yang diperlukan di database:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<pre><code class="language-bash">php artisan migrate</code></pre>
 
-## Contributing
+15. Perintah ini akan menjalankan semua migrasi yang ditemukan di proyek Laravel.
+16. Terakhir, Anda dapat menjalankan server pengembangan Laravel dengan perintah:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<pre><code class="language-bash">php artisan serve</code></pre>
 
-## Code of Conduct
+Server pengembangan akan dijalankan dan Anda dapat mengakses aplikasi Laravel melalui browser dengan alamat http://localhost:8000 atau sesuai dengan yang ditampilkan di terminal.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<h2> Login Admin </h2>
+<br>email : admin@gmail.com
+<br>password : 12345678
 
-## Security Vulnerabilities
+<h2> Preview </h2>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h4>
+  Aplikasi ini menggunakan Laravel sebagai Backend Framework, Bootstrap 4 sebagai CSS Framework, dan MySQL sebagai Database<br>
+</h4>
