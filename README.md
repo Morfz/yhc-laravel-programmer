@@ -60,7 +60,5 @@ Server pengembangan akan dijalankan dan Anda dapat mengakses aplikasi Laravel me
 </h4>
 
 ![Screenshot 2023-07-14 043137](https://github.com/Morfz/yhc-laravel-programmer/assets/100391684/154e1d1d-85dc-4442-8614-d536c19ad267)
-![Screenshot 2023-07-14 043145](https://github.com/Morfz/yhc-laravel-programmer/assets/100391684/ea14e0d1-5557-4469-a36e-ea0a636e436b)
-![Screenshot 2023-07-14 043203](https://github.com/Morfz/yhc-laravel-programmer/assets/100391684/1f83b935-c28e-4e94-895c-680eab4f84ad)
 ![Screenshot 2023-07-14 043214](https://github.com/Morfz/yhc-laravel-programmer/assets/100391684/237b558e-ba5e-4c08-bfa4-9f580d90778d)
 ![Screenshot 2023-07-14 043226](https://github.com/Morfz/yhc-laravel-programmer/assets/100391684/d7baf5ae-fcef-47cc-8844-a349cce658fa)
